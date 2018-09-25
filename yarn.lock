@@ -363,7 +363,7 @@ chalk@^1.1.1:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0:
+chalk@^2.0.0, chalk@^2.0.1, chalk@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"
   dependencies:
@@ -379,13 +379,13 @@ check-error@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/check-error/-/check-error-1.0.2.tgz#574d312edd88bb5dd8912e9286dd6c0aed4aac82"
 
-cli-cursor@^2.1.0:
+cli-cursor@^2.0.0, cli-cursor@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cli-cursor/-/cli-cursor-2.1.0.tgz#b35dac376479facc3e94747d41d0d0f5238ffcb5"
   dependencies:
     restore-cursor "^2.0.0"
 
-cli-spinners@^1.0.1:
+cli-spinners@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-1.3.1.tgz#002c1990912d0d59580c93bd36c056de99e4259a"
 
@@ -407,7 +407,7 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-code-push@^2.0.5:
+code-push@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/code-push/-/code-push-2.0.6.tgz#fb4e140c90fdb7fa047f3be6f53caacc8915d0b8"
   dependencies:
@@ -531,6 +531,12 @@ debug@3.1.0, debug@^3.1.0:
   dependencies:
     ms "2.0.0"
 
+debug@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.0.1.tgz#f9bb36d439b8d1f0dd52d8fb6b46e4ebb8c1cd5b"
+  dependencies:
+    ms "^2.1.1"
+
 decompress-zip@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/decompress-zip/-/decompress-zip-0.3.1.tgz#3e4c6972fe80d89bb0fa9542e30044019ae6f626"
@@ -602,42 +608,42 @@ end-of-stream@^1.0.0:
   dependencies:
     once "^1.4.0"
 
-ern-cauldron-api@^0.22.1:
-  version "0.22.1"
-  resolved "https://registry.yarnpkg.com/ern-cauldron-api/-/ern-cauldron-api-0.22.1.tgz#70d18e18315751dc140fead6dcff1c82b4e1847e"
+ern-cauldron-api@^0.24.4:
+  version "0.24.4"
+  resolved "https://registry.yarnpkg.com/ern-cauldron-api/-/ern-cauldron-api-0.24.4.tgz#062ea3208c02b2448da2ea8efea40f7b2d042b4f"
   dependencies:
-    ern-core "0.22.1"
-    joi "^10.1.0"
+    ern-core "0.24.4"
+    joi "^13.6.0"
     lodash "^4.17.10"
     semver "^5.5.0"
 
-ern-core@0.22.1:
-  version "0.22.1"
-  resolved "https://registry.yarnpkg.com/ern-core/-/ern-core-0.22.1.tgz#33b33eaa3c8deb29fbf8c1b8b79539a82a764a54"
+ern-core@0.24.4:
+  version "0.24.4"
+  resolved "https://registry.yarnpkg.com/ern-core/-/ern-core-0.24.4.tgz#f396527414b1b1b7125e3ff38ffe54c6e3bbd2bf"
   dependencies:
     archiver "^2.1.1"
     bluebird "^3.5.1"
-    chalk "^2.3.0"
+    chalk "^2.4.1"
     cli-table "^0.3.1"
-    code-push "^2.0.5"
+    code-push "^2.0.6"
     console-log-level "^1.4.0"
     decompress-zip "^0.3.1"
     fs-readdir-recursive "^1.1.0"
     get-folder-size "^2.0.0"
     inquirer "^3.0.6"
+    kax "^1.2.7"
     lodash "^4.17.10"
-    mustache "^2.3.0"
-    node-fetch "^2.1.2"
-    node-simctl "^3.12.0"
-    ora "^1.4.0"
+    mustache "^2.3.1"
+    node-fetch "^2.2.0"
+    node-simctl "^3.13.0"
     react-native-cli "^2.0.1"
     semver "^5.5.0"
     shelljs "^0.8.2"
-    simple-git "^1.95.0"
+    simple-git "^1.96.0"
     tmp "^0.0.33"
-    uuid "^3.2.1"
-    xcode-ern "^1.0.9"
-    yarn "^1.7.0"
+    uuid "^3.3.2"
+    xcode-ern "^1.0.10"
+    yarn "^1.9.4"
 
 es6-mapify@^1.1.0:
   version "1.1.0"
@@ -929,9 +935,9 @@ he@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
-hoek@4.x.x:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
+hoek@5.x.x:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/hoek/-/hoek-5.0.4.tgz#0f7fa270a1cafeb364a4b2ddfaa33f864e4157da"
 
 http-errors@1.6.3:
   version "1.6.3"
@@ -983,6 +989,10 @@ iconv-lite@^0.4.17:
 ieee754@^1.1.4:
   version "1.1.12"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.12.tgz#50bf24e5b9c8bb98af4964c941cdb0918da7b60b"
+
+indent-string@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-3.2.0.tgz#4a5fd6d27cc332f37e5419a504dbb837105c9289"
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -1060,9 +1070,11 @@ isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
 
-isemail@2.x.x:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/isemail/-/isemail-2.2.1.tgz#0353d3d9a62951080c262c2aa0a42b8ea8e9e2a6"
+isemail@3.x.x:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/isemail/-/isemail-3.1.3.tgz#64f37fc113579ea12523165c3ebe3a71a56ce571"
+  dependencies:
+    punycode "2.x.x"
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -1071,10 +1083,6 @@ isexe@^2.0.0:
 isstream@0.1.x, isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
-
-items@2.x.x:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/items/-/items-2.1.1.tgz#8bd16d9c83b19529de5aea321acaada78364a198"
 
 jimp@^0.2.28:
   version "0.2.28"
@@ -1097,14 +1105,13 @@ jimp@^0.2.28:
     tinycolor2 "^1.1.2"
     url-regex "^3.0.0"
 
-joi@^10.1.0:
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-10.6.0.tgz#52587f02d52b8b75cdb0c74f0b164a191a0e1fc2"
+joi@^13.6.0:
+  version "13.6.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-13.6.0.tgz#877d820e3ad688a49c32421ffefc746bfbe2d0a0"
   dependencies:
-    hoek "4.x.x"
-    isemail "2.x.x"
-    items "2.x.x"
-    topo "2.x.x"
+    hoek "5.x.x"
+    isemail "3.x.x"
+    topo "3.x.x"
 
 jpeg-js@^0.2.0:
   version "0.2.0"
@@ -1150,6 +1157,16 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+kax@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/kax/-/kax-1.2.7.tgz#8e12dd73997dec6471d5e5f2b44269f1110302f9"
+  dependencies:
+    chalk "^2.4.1"
+    cli-spinners "^1.3.1"
+    indent-string "^3.2.0"
+    log-symbols "^2.2.0"
+    log-update "^2.3.0"
+
 lazystream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lazystream/-/lazystream-1.0.0.tgz#f6995fe0f820392f61396be89462407bb77168e4"
@@ -1180,11 +1197,19 @@ lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.2.1, lodash@^4.3.0, l
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
-log-symbols@^2.1.0:
+log-symbols@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-2.2.0.tgz#5740e1c5d6f0dfda4ad9323b5332107ef6b4c40a"
   dependencies:
     chalk "^2.0.1"
+
+log-update@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/log-update/-/log-update-2.3.0.tgz#88328fd7d1ce7938b29283746f0b1bc126b24708"
+  dependencies:
+    ansi-escapes "^3.0.0"
+    cli-cursor "^2.0.0"
+    wrap-ansi "^3.0.1"
 
 lru-cache@^4.1.2:
   version "4.1.3"
@@ -1277,7 +1302,11 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
-mustache@^2.3.0:
+ms@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
+
+mustache@^2.3.1:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/mustache/-/mustache-2.3.2.tgz#a6d4d9c3f91d13359ab889a812954f9230a3d0c5"
 
@@ -1305,13 +1334,13 @@ netmask@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
 
-node-fetch@^2.1.2:
+node-fetch@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.2.0.tgz#4ee79bde909262f9775f731e3656d0db55ced5b5"
 
-node-simctl@^3.12.0:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/node-simctl/-/node-simctl-3.13.0.tgz#339bf1c06b0504fe39797655b1d854566d6837a3"
+node-simctl@^3.13.0:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/node-simctl/-/node-simctl-3.15.0.tgz#4033504e23218f0d328f14f94300c6ef2cd67b83"
   dependencies:
     appium-support "^2.4.0"
     appium-xcode "^3.1.0"
@@ -1382,15 +1411,6 @@ optionator@^0.8.1:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
     wordwrap "~1.0.0"
-
-ora@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/ora/-/ora-1.4.0.tgz#884458215b3a5d4097592285f93321bb7a79e2e5"
-  dependencies:
-    chalk "^2.1.0"
-    cli-cursor "^2.1.0"
-    cli-spinners "^1.0.1"
-    log-symbols "^2.1.0"
 
 os-tmpdir@~1.0.2:
   version "1.0.2"
@@ -1557,6 +1577,10 @@ pseudomap@^1.0.2:
 psl@^1.1.24:
   version "1.1.29"
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.1.29.tgz#60f580d360170bb722a797cc704411e6da850c67"
+
+punycode@2.x.x:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
 
 punycode@^1.4.1:
   version "1.4.1"
@@ -1763,11 +1787,11 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-simple-git@^1.95.0:
-  version "1.96.0"
-  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-1.96.0.tgz#d0279b771ed89a2d1e7d9e15f9abd7f26e319d7c"
+simple-git@^1.96.0:
+  version "1.102.0"
+  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-1.102.0.tgz#5e159a15fcfcb1eca212a4fdceb4384166c71e7d"
   dependencies:
-    debug "^3.1.0"
+    debug "^4.0.1"
 
 simple-plist@^0.2.1:
   version "0.2.1"
@@ -1866,7 +1890,7 @@ string-width@^1.0.1:
     is-fullwidth-code-point "^1.0.0"
     strip-ansi "^3.0.0"
 
-"string-width@^1.0.2 || 2", string-width@^2.1.0:
+"string-width@^1.0.2 || 2", string-width@^2.1.0, string-width@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-2.1.1.tgz#ab93f27a8dc13d28cac815c462143a6d9012ae9e"
   dependencies:
@@ -1981,11 +2005,11 @@ to-buffer@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/to-buffer/-/to-buffer-1.1.1.tgz#493bd48f62d7c43fcded313a03dcadb2e1213a80"
 
-topo@2.x.x:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/topo/-/topo-2.0.2.tgz#cd5615752539057c0dc0491a621c3bc6fbe1d182"
+topo@3.x.x:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/topo/-/topo-3.0.0.tgz#37e48c330efeac784538e0acd3e62ca5e231fe7a"
   dependencies:
-    hoek "4.x.x"
+    hoek "5.x.x"
 
 touch@0.0.3:
   version "0.0.3"
@@ -2082,7 +2106,7 @@ uuid@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
 
-uuid@^3.2.1, uuid@^3.3.2:
+uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
 
@@ -2126,11 +2150,18 @@ wordwrap@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
 
+wrap-ansi@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-3.0.1.tgz#288a04d87eda5c286e060dfe8f135ce8d007f8ba"
+  dependencies:
+    string-width "^2.1.1"
+    strip-ansi "^4.0.0"
+
 wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
-xcode-ern@^1.0.9:
+xcode-ern@^1.0.10:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/xcode-ern/-/xcode-ern-1.0.10.tgz#1110691d525152d183d66c2968b179e1dc56b50b"
   dependencies:
@@ -2182,9 +2213,9 @@ yallist@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
 
-yarn@^1.7.0:
-  version "1.9.4"
-  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.9.4.tgz#3b82d8446b652775723900b470d966861976924b"
+yarn@^1.9.4:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.10.0.tgz#f7d81802586fa8b3b4bf3ac6fb493fbc6c29845c"
 
 yauzl@2.4.1:
   version "2.4.1"

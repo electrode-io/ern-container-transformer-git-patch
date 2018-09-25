@@ -17,8 +17,9 @@
     "url": "https://github.com/electrode-io/ern-container-transformer-git-patch/issues"
   },
   "dependencies": {
-    "ern-cauldron-api": "^0.22.1",
-    "shelljs": "0.8.2"
+    "ern-cauldron-api": "^0.24.4",
+    "shelljs": "0.8.2",
+    "tmp":"^0.0.33"
   },
   "devDependencies": {
     "@types/chai": "^4.1.4",
@@ -28,8 +29,7 @@
     "mocha": "^5.2.0",
     "prettier": "^1.14.2",
     "ts-node": "^7.0.1",
-    "typescript": "^3.0.3",
-    "tmp":"^0.0.33"
+    "typescript": "^3.0.3"
   },
   "scripts": {
     "test": "mocha -r ts-node/register test/*.js",
