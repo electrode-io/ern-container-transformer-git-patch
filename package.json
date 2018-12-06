@@ -17,7 +17,7 @@
     "url": "https://github.com/electrode-io/ern-container-transformer-git-patch/issues"
   },
   "dependencies": {
-    "ern-cauldron-api": "^0.24.4",
+    "ern-cauldron-api": "^0.26.0",
     "shelljs": "0.8.2",
     "tmp":"^0.0.33"
   },
