@@ -46,7 +46,7 @@ export default class ScriptTransformer {
       let pathToPatchFile = patchFile
       if (patchFile.startsWith('cauldron://')) {
         const localRepoPath = tmp.dirSync({ unsafeCleanup: true }).name
-        const cauldron = await getActiveCauldron({ localRepoPath })
+        const cauldron = await getActiveCauldron({ localRepoPath, ignoreSchemaVersionMismatch: true })
         if (!cauldron) {
           this.throwError('A Cauldron needs to be active for using a patch file stored in the Cauldron')
         }
