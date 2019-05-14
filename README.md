@@ -25,12 +25,30 @@ Instead of passing the whole configuration on the command line for `--extra/-e`,
 
 ### With Cauldron
 
-To automatically transform the Cauldron generated Containers of a target native application and platform, you can add a transformer entry in the Cauldron in the Container generator configuration object as follow :
+To automatically transform the Cauldron generated Containers of a target native application and platform, you can add a transformer entry in the Cauldron in the Container generator configuration object as follow:
+
+**Electrode Native <= 0.31**
 
 ```json
 "transformers": [
   {
-    "name": "git-patch",
+    "name": "ern-container-transformer-git-patch",
+    "extra": {
+      "patchFiles": [
+        "/local/path/to/a.git.patch",
+        "cauldron://path/to/another.git.patch"
+      ]
+    }
+  }
+]
+```
+
+**Electrode Native >= 0.32**
+
+```json
+"pipeline": [
+  {
+    "name": "ern-container-transformer-git-patch",
     "extra": {
       "patchFiles": [
         "/local/path/to/a.git.patch",
