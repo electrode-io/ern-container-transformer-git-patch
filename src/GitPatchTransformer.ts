@@ -61,9 +61,15 @@ export default class ScriptTransformer {
       }
 
       const gitApplyCommand = `git apply ${pathToPatchFile}`
-      const gitApplyResult = shell.exec(gitApplyCommand, {cwd:containerPath})
-      if (gitApplyResult.code !== 0) {
-        throw new Error(`${gitApplyCommand} failed with exit code ${gitApplyResult.code}`)
+
+      try {
+        shell.pushd(containerPath)
+        const gitApplyResult = shell.exec(gitApplyCommand)
+        if (gitApplyResult.code !== 0) {
+          throw new Error(`${gitApplyCommand} failed with exit code ${gitApplyResult.code}`)
+        }
+      } finally {
+        shell.popd()
       }
     }
   }
