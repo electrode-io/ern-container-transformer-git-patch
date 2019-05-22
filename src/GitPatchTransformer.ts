@@ -60,16 +60,10 @@ export default class ScriptTransformer {
         fs.writeFileSync(pathToPatchFile, patchFileContent.toString())
       }
 
-      const gitApplyCommand = `git apply ${pathToPatchFile}`
-
-      try {
-        shell.pushd(containerPath)
-        const gitApplyResult = shell.exec(gitApplyCommand)
-        if (gitApplyResult.code !== 0) {
-          throw new Error(`${gitApplyCommand} failed with exit code ${gitApplyResult.code}`)
-        }
-      } finally {
-        shell.popd()
+      const gitApplyCommand = `git apply --directory=${containerPath} ${pathToPatchFile} --unsafe-paths`
+      const gitApplyResult = shell.exec(gitApplyCommand)
+      if (gitApplyResult.code !== 0) {
+        throw new Error(`${gitApplyCommand} failed with exit code ${gitApplyResult.code}`)
       }
     }
   }
