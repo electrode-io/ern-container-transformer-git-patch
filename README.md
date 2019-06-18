@@ -67,7 +67,7 @@ To automatically transform the Cauldron generated Containers of a target native 
 
 ### Programmatically
 
-```js
+```typescript
 import GitPatchTransformer from 'ern-container-transformer-git-patch'
 const transformer = new GitPatchTransformer()
 transformer.transform(
