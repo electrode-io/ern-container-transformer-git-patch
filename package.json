@@ -1,20 +1,25 @@
 {
   "name": "ern-container-transformer-git-patch",
   "version": "1.0.4",
-  "main": "dist/index.js",
-  "license": "Apache-2.0",
   "keywords": [
+    "android",
     "electrode",
     "ern-container-transformer",
-    "ios",
-    "android"
+    "ios"
   ],
+  "bugs": {
+    "url": "https://github.com/electrode-io/ern-container-transformer-git-patch/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/electrode-io/ern-container-transformer-git-patch.git"
   },
-  "bugs": {
-    "url": "https://github.com/electrode-io/ern-container-transformer-git-patch/issues"
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build",
+    "test": "mocha -r ts-node/register test/*.js"
   },
   "dependencies": {
     "ern-cauldron-api": "^0.38.7",
@@ -30,10 +35,5 @@
     "prettier": "^1.14.2",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
-  },
-  "scripts": {
-    "test": "mocha -r ts-node/register test/*.js",
-    "build": "tsc",
-    "prepublish": "yarn build"
   }
 }
