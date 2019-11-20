@@ -84,5 +84,5 @@ transformer.transform(
 })
 ```
 
-[1]: https://github.com/electrode-io/ern-container-transformer-git-patch/main/badge.svg
+[1]: https://github.com/electrode-io/ern-container-transformer-git-patch/workflows/main/badge.svg
 [2]: https://github.com/electrode-io/ern-container-transformer-git-patch/actions
