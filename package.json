@@ -15,6 +15,10 @@
     "url": "https://github.com/electrode-io/ern-container-transformer-git-patch.git"
   },
   "license": "Apache-2.0",
+  "files": [
+    "dist",
+    "src"
+  ],
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
