@@ -3,7 +3,9 @@
     "target": "es2015",
     "allowJs": true,
     "esModuleInterop": true,
-    "lib": ["es2017"],
+    "lib": [
+      "es2017"
+    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
@@ -11,7 +13,14 @@
     "strictNullChecks": true,
     "rootDir": "./src",
     "outDir": "dist"
-  },    
-  "include": ["**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts", "test", "dist"]
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "test",
+    "dist"
+  ]
 }
