@@ -26,7 +26,7 @@
     "test": "mocha -r ts-node/register test/*.js"
   },
   "dependencies": {
-    "ern-cauldron-api": "^0.38.16",
+    "ern-cauldron-api": "^0.40.0",
     "shelljs": "0.8.3",
     "tmp": "^0.1.0"
   },
